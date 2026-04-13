@@ -12,22 +12,45 @@ document.getElementById("doacao-sangue").addEventListener("submit", function (e)
   
   //Regras de validação
 
-  // Nome 
+  // Nome //
+  if(nome.length === ""){
+    return alert("Por favor, insira seu nome.");
+  }
+
   let sobrenome = nome.trim().split(/\s+/);
 
   if(sobrenome.length < 2) {
-      alert("Por favor insira seu nome e sobrenome.");
+      alert("Por favor, insira seu nome e sobrenome.");
       return;
   }
 
-   //Email
+   // Email //
+  if(email.length === ""){
+    return alert ("Por favor, insira seu email.")
+  }
+
   if (!email.includes("@")) return alert("Email inválido: O email deve conter @");
 
-  //Idade
+  // Idade //
+  if(idade.length === ""){
+    return alert("Por favor, insira sua idade.");
+  }
+
   if(idade > 0 && idade < 16){
     alert("Você deve ter mais que 16 anos de idade para doar sangue!");
     return;
   }
+
+  // Peso //
+  if(peso.length === ""){
+    return alert("Por favor, informe seu peso.");
+  }
+
+  if(peso < 50){
+    return alert("Seu peso tem que ser no mínimo 50kg.");
+  }
+
+
 
 
   document.getElementById("resultado").innerHTML = "Seu cadastro foi realizado com sucesso na nossa ONG !<br>" + "Nome: " + nome;
