@@ -49,7 +49,13 @@ document.getElementById("doacao-sangue").addEventListener("submit", function (e)
   if(peso < 50){
     return alert("Seu peso tem que ser no mínimo 50kg.");
   }
+  
+  //Tipo Sanguineo//
+  if(tiposanguineo === ""){
+    return alert("Por favor, selecione um tipo sanguíneo.");
+  }
 
+  //
 
 
 
