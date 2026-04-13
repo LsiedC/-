@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RETIRADA DE SANGUE LSC</title>
+</head>
+
+<body>
+
+    <div id="padronizacao">
+        <div>
+            <h2>Formulário de Adoção</h2>
+            <form id="doacao-sangue">
+                <div class="espacamento">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu Nome">
+                </div>
+                <div class="espacamento">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite seu Email">
+                </div>
+                <div class="espacamento">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" placeholder="Digite sua Idade">
+                </div>
+                <div class="espacamento">
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso" placeholder="Digite seu peso">
+                </div>
+                <div class="espacamento">
+                    <label for="tiposanguineo">Tipo sanguíneo:</label>
+                    <select name="tiposanguineo" id="tiposanguineo">
+                        <option value="">Selecione</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="RH-">RH-</option>
+                    </select>
+                </div>
+                <div class="espacamento">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="Digite seu Telefone">
+                </div>
+                <div class="espacamento">
+                    <label for="cidade">Cidade:</label>
+                    <input type="cidade" name="cidade" id="cidade" placeholder="Digite sua Cidade">
+                </div>
+                <div class="espacamento">
+                    <label for="estado">Estado:</label>
+                    <input type="estado" name="estado" id="estado" placeholder="Digite sua Cidade">
+                </div>
+            </form>
+
+            <div id="resultado"></div>
+
+            <script src="scripts/doacao-sangue.js"></script>
+
+        </div>
+    </div>
+
+    <footer>
+        <h1><strong>Direitos reservados a instuição de retirada de sangue LSC</strong></h1>
+    </footer>
