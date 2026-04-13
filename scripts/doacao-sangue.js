@@ -20,6 +20,11 @@ document.getElementById("doacao-sangue").addEventListener("submit", function (e)
       return;
   }
 
+   //Email
+  if (!email.includes("@")) return alert("Email inválido: O email deve conter @");
+
+  //Idade
+  
 
 
   document.getElementById("resultado").innerHTML = "Seu cadastro foi realizado com sucesso na nossa ONG !<br>" + "Nome: " + nome;
