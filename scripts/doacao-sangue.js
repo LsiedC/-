@@ -7,12 +7,20 @@ document.getElementById("doacao-sangue").addEventListener("submit", function (e)
   let peso = document.getElementById("peso").value;
   let tiposanguineo = document.getElementById("tiposanguineo").value;
   let telefone = document.getElementById("telefone").value;
-  let cidade = document.getElementById("telefone").value;
+  let cidade = document.getElementById("cidade").value;
   let estado = document.getElementById("estado").value;
   
   //Regras de validação
 
-  
+  // Nome 
+  let sobrenome = nome.trim().split(/\s+/);
+
+  if(sobrenome.length < 2) {
+      alert("Por favor insira seu nome e sobrenome.");
+      return;
+  }
+
+
 
   document.getElementById("resultado").innerHTML = "Seu cadastro foi realizado com sucesso na nossa ONG !<br>" + "Nome: " + nome;
 
